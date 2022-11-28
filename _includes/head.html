@@ -1,0 +1,30 @@
+<!doctype html>
+<html class="no-js" lang="{{ site.language}} ">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}" />
+  <meta name="google-site-verification" content="{{ site.google-verification }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/icons/favicon-16x16.png">
+  <link rel="manifest" href="/assets/img/icons/site.webmanifest">
+  <link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/img/icons/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+ 
+  <link type="text/css" rel="stylesheet" href="//fast.fonts.net/cssapi/215c6a40-481b-4101-8b00-c8396c93500a.css"/>
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lozad.js/1.16.0/lozad.min.js"></script>
+
+  
+</head>
+<body {% if page.collection == 'projects' %} class="single-project" {% endif %}>
+  <div>
+  <div class="off-canvas-wrapper">
+    {% include components/offcanvas-content.html %}
+    <div class="off-canvas-content" data-off-canvas-content>

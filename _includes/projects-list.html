@@ -1,0 +1,24 @@
+<div class="grid-container">
+  
+  {% assign posts = site.projects | sort: "order" %}
+    {% for project in posts %}
+    <div class="grid-x  {% cycle 'odd', 'even' %} {{ project.class }}">
+       <div class="cell medium-6 large-6">           
+          <figure class="project-link">
+            <a href="{{ project.url }}" class="project-thumb" >
+              <img src="{{ site.url }}/assets/img/projects/{{ project.thumbnail}}" alt="{{ project.title }}"/>            
+             
+            </a>
+          </figure>
+      </div>
+      <div class="cell medium-6 large-6">
+        <div class="project-info">
+          <p class="project-client">{{ project.client }}</p>
+          <h3 class="project-title"><a href="{{ project.url }}" >{{ project.title }}</a></h3>
+          <p><a href="{{ project.url }}" class="button hollow project-cta"><span>View More</span> <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#000000" viewBox="0 0 256 256"><line x1="40" y1="128" x2="216" y2="128" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></line><polyline points="144 56 216 128 144 200" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="24"></polyline></svg></a></p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+ 
+</div>

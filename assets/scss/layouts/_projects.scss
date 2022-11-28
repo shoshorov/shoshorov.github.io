@@ -1,0 +1,64 @@
+.single-project {
+  .project-main-image {
+    margin-bottom: 4rem;
+  }
+
+  .project-title {
+    font-weight: bold;
+  }
+
+  .project-client {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+  } 
+  .project-description {
+    p {
+      font-size: rem-calc(20);
+    }
+  }
+  .project-role, .project-url {
+    line-height: 1.2;
+    span {
+      display: block;
+      font-size: rem-calc(14);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.25rem; 
+    }
+  }
+  .project-url {
+    margin-bottom: 3rem;
+  }
+  figure {
+    margin-bottom: rem-calc(20);
+  }
+  figcaption {
+   
+    font-size: rem-calc(14);
+    color: $dark-gray;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba($light-gray, 0.3);
+  }
+}
+
+#divider {
+  fill: none;
+  stroke: $light-gray;
+  stroke-width: 0.5;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
